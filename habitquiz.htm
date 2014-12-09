@@ -1,0 +1,126 @@
+<html style="background-color: #B5B5FF;">
+
+<head>
+<title>JavaScriptKit.com Multiple Choice Quiz Script</title>
+
+<style>
+.qheader{
+font:bold 14px Arial;
+}
+
+.qselections{
+font:normal 13px Arial;
+}
+</style>
+
+<script src="habitconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+
+</head>
+
+<body>
+
+<!--Comments on configuring quiz script-->
+<!--Change the questions below any way you want, but make note of the following:-->
+<!--1) Perserve the <FORM> tags -->
+<!--2a) Inside each radio button, use the VALUE attribute to denote each question's choices: "a", "b", "c" etc.-->
+<!--2b) Inside each radio button, use the NAME attribute to denote which question the button belongs to ("question1", "question2" etc-->
+<!--3) Script supports unlmited # of questions. Be sure to edit .js file to enter corresponding solutions-->
+
+<p align="center">
+
+<form method="POST" name="myquiz">
+
+<font face="Arial"><big><big>Sleep Hygiene Quiz</big></big></font></p>
+
+<div class="qheader">
+1) How often do you go to bed at the same time each night?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question1">a) Quite often.<br>
+<input type="radio" value="b" name="question1">b) Infrequently.<br>
+
+</div>
+
+<br>
+
+<div class="qheader">
+2) Do you normally wake up at the same time each morning?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question2">a) Yes.<br>
+<input type="radio" value="b" name="question2">b) No.<br>
+</div>
+
+<br>
+
+<div class="qheader">
+3) Do you exercise regularly?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question3">a) Yes! <br>
+<input type="radio" value="b" name="question3">b) No! <br>
+</div>
+
+<br>
+
+<div class="qheader">
+4) Do you enjoy caffeinated drinks in the evening?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question4">a) All the time.<br>
+<input type="radio" value="b" name="question4">b) Not really.<br>
+</div>
+
+<br>
+
+<div class="qheader">
+5) Do you use other stimulant drugs?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question5">a) Nope.<br>
+<input type="radio" value="b" name="question5">b) Of course!<br>
+</div>
+
+<br>
+
+<div class="qheader">
+6) Are you normally exposed to bright light, such as a TV or computer screen, shortly before bed?</div>
+<div class="qselections">
+<input type="radio" value="a" name="question6">a) No! Sounds terrible. <br>
+<input type="radio" value="b" name="question6">b) All the time.<br>
+</div>
+
+<br>
+
+<div class="qheader">
+7) BONUS: The longest river in the world is:</div>
+<div class="qselections">
+<input type="radio" value="a" name="question7">a) Amazon (Brazil)<br>
+<input type="radio" value="b" name="question7">b) Nile (Egypt)<br>
+<input type="radio" value="c" name="question7">c) Yangtze (China)<br>
+<input type="radio" value="d" name="question7">d) Congo (Zaire)<br>
+</div>
+
+<br>
+
+
+</form>
+
+<form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
+<p id="footnote" align="center"><font face="arial" size="-1">Quiz script provided by<br>
+<a href="http://www.javascriptkit.com">JavaScriptKit.com</a></font></p>
+</body>
+</html>

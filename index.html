@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type = "text/css">
+::-moz-selection {
+	color:purple;
+	background: lightgreen;
+}
+
+::selection {
+	color: purple;
+	background: lightgreen;
+}
+
+@font-face {
+	font-family: Damion;
+	src: url(http://fonts.gstatic.com/s/damion/v6/-BKObCT6qzambad6KpW58fesZW2xOQ-xsNqO47m55DA.woff2);
+}
+body{ 
+	margin: 0px;
+    height: 100%;
+	/*annoying gradient stuff*/
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* IE10 Consumer Preview */ 
+    background: -ms-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Mozilla Firefox */ 
+	background: -moz-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Opera */ 
+	background: -o-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Webkit (Safari/Chrome 10) */ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000002), color-stop(1, #370555)) fixed;
+	/* Webkit (Chrome 11+) */ 
+	background: -webkit-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* W3C Markup, IE10 Release Preview */ 
+	background: linear-gradient(to bottom, #000002 0%, #370555 100%) fixed;/* IE10 Consumer Preview */ 
+	background: -ms-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Mozilla Firefox */ 
+	background: -moz-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Opera */ 
+	background: -o-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* Webkit (Safari/Chrome 10) */ 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000002), color-stop(1, #370555)) fixed;
+	/* Webkit (Chrome 11+) */ 
+	background: -webkit-linear-gradient(top, #000002 0%, #370555 100%) fixed;
+	/* W3C Markup, IE10 Release Preview */ 
+	background: linear-gradient(to bottom, #000002 0%, #370555 100%) fixed;
+}
+.header {
+    text-align: center;
+    font-family: Damion;
+	font-size: 45px;
+	color: white;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 50;
+	line-height: 0px;
+	top: 0px;
+	bottom: 130px;
+	width: 100%;
+	position: fixed;
+	margin: 0px auto;
+	height: 115px;
+	z-index: 2;
+}
+.info {
+	position: relative;
+	top: 110px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	z-index: 1;
+}
+div.info > p{
+	text-align: left;
+    padding-right: 25%;
+    padding-left: 25%;
+    font-size: 18px;
+    font-family: "Trebuchet MS", Helvetica, sans-serf;
+}
+div.info > h1{
+    padding-right: 7%;
+    padding-left: 7%;
+    font-family: "Trebuchet MS", Helvetica, sans-serf;
+
+}
+a:link{
+    color: green;
+}
+a:visited {
+	color: orange;
+}
+nav#buttons > a{
+	background: #83FFAC;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 30px;
+
+
+
+}
+.citations {
+    position: relative;
+    top: 150px;
+	color: pink;
+	z-index: 1;
+	text-align: left;
+	margin: 10px;
+}
+
+</style>
+<script>
+var calmsong = new Audio();
+calmsong.src = "timesend.mp3";
+calmsong.currentTime = 243;
+
+var stimsong = new Audio();
+stimsong.src = "wrath.mp3";
+stimsong.currentTime = 39;
+
+
+
+function stimulate(){
+	var thatdiv = document.getElementById('header');
+    document.body.style.background = "#00B8B8";
+    thatdiv.style.backgroundColor = "#66ccff";
+    thatdiv.style.fontFamily = "Impact, Charchoal, sans-serf";
+    thatdiv.innerHTML = "<h1>Stimulating</h1>";
+    calmsong.pause();
+    calmsong.currentTime = 243;
+    stimsong.play();
+}
+function destimulate(){
+	var thatdiv = document.getElementById('header');
+	document.body.style.background = "#993030";
+    thatdiv.style.backgroundColor = "#ff9999";	
+    thatdiv.style.fontFamily = "Damion";
+    thatdiv.innerHTML = "<h1>Soothing</h1>";
+	stimsong.pause();
+	stimsong.currentTime = 39;
+	calmsong.play();
+}
+function revert(){
+	location.reload();
+}
+</script>
+</head>
+<body>
+	<div class = "header" id="header">
+		<img id="star" style="height: 100%; width: 100%; z-index: 1;" src="stars.jpg">
+	<p style="margin: 5px; font-family: Arial; position: absolute; text-align: left; top: 10px; font-size: 10px;">please use chrome for best experience</p>
+	<h1 style="width: 100%; text-align: center; top: 0px; position: absolute;">Sleep</h1>
+	<p style="position: absolute; width:95%; text-align: right; top: 85px; font-size: 20px;"> by Andrew Sheeler</p>
+    </div>
+
+    <div class="info">
+    	<br><br><br><h1>What is sleep and where can I get it?</h1><br>
+    	
+<hr / width = "80%;"><br><br>
+    	<h1>What is sleep?</h1>
+    	<p>Sleep is a psychological phenomenon that, to this day, is ill-understood. Every night, we lose consciousness, only to regain it partially during some strange hallucinations before finally awaking the next day. That's pretty weird, but it is as natural to us as breathing. <br><br>
+
+    	Sleep in humans is characterized by a cycle of specific patterns of brain activity (measured as electrical stimulation) known as phases. Though in general brain activity during sleep is reduced compared to brain activity while awake, one phase, known as Rapid Eye Movement (REM), rivals wakefulness in terms of overall brain stimulation. <br><br>
+
+    	Though sleep is not well understood, sleep research is making progress. *YOU*, in particular, can apply modern discoveries in order to improve your overall quality of sleep and, with it, your quality of life.
+    	</p>
+<br><br> <hr / width = "80%;"> <br>
+    	<p style="text-align: center;">Now take this quiz on sleep deprivation!</p>
+    	<iframe style="height:400px; width: 45%; seamless;"src="deprivequiz.htm">Your browser doesn't support this awesome feature :( Update!</iframe>
+    	<br><br><br>
+    	<h1>Why is getting enough important?</h1>
+    	<p>There is no single optimal sleep length; it varies from person to person. Sleep need is typically between 6 and 9 hours per night and also tends to be hereditary. Though each individual has a different need. <br> <br>
+
+    	There are many common effects of missing the mark and entering a state of sleep deprivation. Common effects of short term sleep deprivation include poor memory, shortened attention span, and decreased motor skills, in addition to the tiredness one would expect. <br> <br> 
+
+    	Long term sleep deprivation is even worse. In addition to worsening many short term effects, research on rats suggests that chronic sleep deprivation alters brain structures. In particular, the overall health of the hippocampus, a part of the brain crucial for memory formation, was reduced in sleep-deprived rats.
+    	</p>
+<br><br><br><hr / width = "80%;"> <br>
+    	<h1>Got some Rhythm?</h1>
+
+    	<p>Understanding circadian rhythm is vital to understanding sleep. At its simplest, your circadian rhythm is your body's clock. Numerous biological processes, from body temperature, to hormone levels, to mental acuity, vary regularly based on a daily cycle. This cycle is related to, but not equivalent to, your cycle of sleeping and waking. As your circadian rhythm influences biological processes relevant to sleep, choosing a sleep schedule that coincides with your circadian rhythm's time of least arousal will improve the quality of your sleep. </p>
+    	<br><br><br>
+<p style="text-align:center;">Now take this quiz evaluating your sleep hygiene!</p>
+    	<iframe style="height:400px; width: 45%; seamless;"src="habitquiz.htm">Your browser doesn't support this awesome feature :( Update!</iframe>
+    	<br>
+    	<h1>What is sleep hygiene?</h1>
+    	<p>The term sleep hygiene refers to practices that influence the quality of sleep. Someone with good sleep hygiene takes steps to promote good sleep, while someone with bad sleep hygiene has habits that interfere with good sleep.<br> <br>
+
+    	The most powerful method for achieving high quality sleep is, somewhat predictably, having a regular sleep schedule that allots enough time for your sleep need, as this pattern of sleep naturally aligns with your body's circadian rhythm.
+
+    	<br><br>
+
+    	Other common methods involve avoiding stimulation, particularly stimuli that promote alertness, shortly before attempting to sleep. Stimulant drugs, such as caffeine, can be particularly disruptive. Among adults sensitive to caffeine, even a single cup in the evening may disrupt sleep for an entire night. Other factors that disrupt sleep include bright lights, such as those found on many electronic devices. <br><br>
+
+    	Be careful though: not all stimulating activities reduce sleep quality. For example, exercise in the evening has not been shown to be strongly tied to reduced sleep quality, and regular exercise may even improve overall sleep.
+    	
+    	</p>
+    	<br><br>
+    	<p>Consider this demonstration. Click each button to see an example of a more stimulating and less stimulating webpage:</p>
+    	<nav id = "buttons">
+			<a href="#" onmousedown="stimulate()"> Stimulating </a>
+	        <a href="#" onmousedown="destimulate()"> Less Stimulating </a>
+	        <br><br>
+	        <a href="#" onmousedown="revert()"> Back to Normal </a>
+    	</nav>
+    	<br>
+
+    	<p>Blue wavelengths of light have been shown to increase cognitive function, much like caffeine. Thus, displays with more blue light will promote wakefulness, and displays with less blue light (such as those with a red background) will not. This effect is so well documented that a <a href="https://justgetflux.com" target =" __blank">desktop app</a> has been developed that changes your monitor's color output based on the time of day. <br><br>
+
+    	Music's role in sleep promotion/prevention is more disputed. Although some studies have tied one genre of music or another to the promotion of wakefulness/sleepiness, others have disputed these claims. Thus, I based the music selection in the prior example on my own preferences. I found the song for the stimulating display calming while I found the song for the less stimulating display calming.
+    	</p><br><br>
+    	<hr / width = "80%;">
+    	<br><br><br>
+
+    	<h1>What can you do?</h1><br>
+    	<p>Practice good sleep hygiene: <br>Avoid stimulant drugs in the evening<br>Avoid bright light, especially blue light, before bed<br>Exercise regularly<br>Stick to a consistent sleep schedule<br> <br>
+    	Understand your body: As sleep need and circadian rhythm vary from person to person, regulating your sleep begins with consciously tracking how you feel and how you sleep.
+    	 <br><br>
+
+    	Of course, if you are suffering from severe sleep deprivation, unable to regulate your sleep using these strategies, or in any other way extremely unwell, seeing a doctor may be the right choice for you. Also, the quizes on this page do not replace a doctor.
+
+    	</p>
+    	<br>
+    	    <hr / width = "90%;"> 
+    <hr / width = "90%;"> 
+    </div>
+
+    <div class = "citations">
+    	<h1>Sources:</h1>
+    	<p>Basner, M., Rao, H., Goel, N., Dinges, D. F. (2013), Sleep deprivation and neurobehavioral dynamics. Current Opinion in Neurobiology, 23(5): 854-863. doi:10.1016/j.conb.2013.02.008</p>
+        <p>Beaven, C. M., Ekström, J. (2013), A Comparison of Blue Light and Caffeine Effects on Cognitive Function and Alertness in Humans. PLOS ONE, doi: 10.1371/journal.pone.0076707</p>
+        <p>Blatter, K., Cajochen, C. (2007), Circadian rhythms in cognitive performance: Methodological constraints, protocols, theoretical underpinnings. Physiology &amp; Behavior, 90(2-3): 196-208. doi:10.1016/j.physbeh.2006.09.009</p>
+        <p>Bondke Persson , A. and Persson, P. B. (2014), Sleep. Acta Physiologica, 210: 229–230. doi: 10.1111/apha.12216</p>
+        <p>Buman, M. P., Phillips, B. A., Youngstedt, S. D., Kline, C. E., Hirshkowitz, M. (2014),  Does nighttime exercise really disturb sleep? Results from the 2013 National Sleep Foundation Sleep in America Poll. Sleep Medicine, 15(7): 755-761. doi:10.1016/j.sleep.2014.01.008</p>
+        <p>Carrubba, S.,  Kim, P. Y.,  McCarty, D. E., Chesson Jr., A. L., Frilot, C., Marino, A. A. (2012), Continuous EEG-based dynamic markers for sleep depth and phasic events. Journal of Neuroscience Methods, 208(1):1-9. doi:10.1016/j.jneumeth.2012.04.018</p>
+        <p>De Niet, G., Tiemens, B., Lendemeijer, B. and Hutschemaekers, G. (2009), Music-assisted relaxation to improve sleep quality: meta-analysis. Journal of Advanced Nursing, 65: 1356–1364. doi: 10.1111/j.1365-2648.2009.04982.x</p>
+        <p>Hor, H., Tafti, M. (2009), How Much Sleep Do We Need? Science, 325(5942):825-826. doi:10.1126/science.1178713</p>
+        <p>Liu, N.-H., Chiang, C.-Y., &amp; Hsu, H.-M. (2013). Improving Driver Alertness through Music Selection Using a Mobile EEG to Detect Brainwaves. Sensors (Basel, Switzerland), 13(7), 8199–8221. doi:10.3390/s130708199</p>
+        <p>Lloret-Linares, C., Lafuente-Lafuente, C., Chassany, O., Green, A., Delcey, V., Mouly, S. and Bergmann, J. F.  (2012), Does a single cup of coffee at dinner alter the sleep? A controlled cross-over randomised trial in real-life conditions. Nutrition &amp; Dietetics, 69: 250–255. doi: 10.1111/j.1747-0080.2012.01601.x</p>
+        <p>Reynolds, A. C.,  Banks, S. (2010), Total sleep deprivation, chronic sleep restriction and sleep disruption. Progress in Brain Research, 185: 91-103. doi:10.1016/B978-0-444-53702-7.00006-3</p>
+        <p>Image found <a href="http://www.universetoday.com/106725/are-there-more-grains-of-sand-than-stars/" target =" __blank">here</a></p>
+        <p>music used freely available <a href="http://www.terriblefate.com/" target =" __blank">here</a></p>
+    </div>
+
+
+</body>
+</html>
